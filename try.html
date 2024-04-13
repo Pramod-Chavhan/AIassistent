@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Name Animation</title>
+    <style>
+        /* Style for your name */
+        .name {
+            font-size: 36px;
+            font-weight: bold;
+            color: #ff3366; /* Change to your desired color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
+            background: linear-gradient(45deg, #ff3366, #ff9933, #ffff33, #33cc33, #3366ff); /* Rainbow gradient background */
+            -webkit-background: text; /* Apply gradient to text */
+            color: transparent; /* Hide the original text color */
+            animation: rainbow 5s infinite alternate, rotate 10s infinite linear; /* Apply multiple animations */
+        }
+
+        /* Rainbow animation */
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        /* Rotation animation */
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="name">Your Beautiful Name</div>
+</body>
+</html>
